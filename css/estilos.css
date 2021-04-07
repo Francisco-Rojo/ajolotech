@@ -1,0 +1,40 @@
+
+body {
+	background-color: #EAECEE;
+}
+
+nav {
+	background: #34495E; 
+}
+
+#menu {
+	margin-left: auto;
+}
+
+#menu li a {
+	font-size: 17px;
+}
+
+hr{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+ul li {
+	list-style: none;
+	text-decoration: none;
+}
+
+article {
+	background-color: white;
+}
+
+aside {
+	background-color: white;
+}
+
+
+
+footer {
+	font-size: 12px;
+}
