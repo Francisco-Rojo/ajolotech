@@ -40,6 +40,13 @@ aside {
 }
 
 
+textarea {
+	padding: 10px;
+	min-width: 240px;
+	max-width: 240px;
+	min-height: 100px;
+	max-height: 100px;
+}
 
 footer {
 	font-size: 12px;

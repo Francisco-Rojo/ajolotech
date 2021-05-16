@@ -19,6 +19,9 @@
   	<!-- ARCHIVOS CSS PERSONALIZADOS -->
   	<link type="text/css" rel="stylesheet" href="css/estilos.css">
   	<link rel="stylesheet" type="text/css" href="css/redes.css">
+
+    <!-- ARCHIVO SCROLLREVEAL --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
   	<title>AjoloTech</title>
 </head>
 <body>
@@ -49,13 +52,13 @@
 		</nav>
 	</header>
 
-
-	<div class="container-fluid">
+	<!-- IMAGEN AJOLOTE -->
+	<div class="container-fluid" id="animacionAjolote">
 		<div class="row d-flex justify-content-center">
 		<img class="img-fluid " src="img/a.jpeg"></div>
 	</div>
 
-
+<!-- WHATSAPP Y FACEBOOK FIXED LADO IZQUIERDO -->
 	<div class="redes d-none d-md-block">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<a href="https://api.whatsapp.com/send?phone=525582135552&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20AjoloTech" class="whats" target="_blank">
@@ -69,13 +72,13 @@
 	<!-- seccion Quienes somos? -->
 	<article class="container rounded mt-md-1">	
 		<section class="row py-md-3"> 
-			<div class="col-12 col-md-6 ">
+			<div class="col-12 col-md-6 " id="animacionQuienesSomos">
 				<h1 class="d-none d-md-block display-2 text-center">AjoloTech</h1>
 				<h1 class="d-block d-md-none text-center">AjoloTech</h1>
 				<h2 class="text-center">¿Quienes somos?</h2>
 				<p class="text-center">Ajolo Tech es un equipo de estudiantes de la carrera de ingenieria en sistemas computacionales enfocados en la  creación de paginas web y aplicaciones móviles para nuevos negocios o negocios existentes que tengan o quieran un crecimiento con una visión innovadora enfocada a la tecnólogia y al futuro.</p>
 			</div>
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-6" id="animacionLogo">
 				<img class="img-fluid d-flex m-auto p-0" src="img/logoAjoloTech.png"  width='450px' height="auto" alt="logo AjoloTech con compu">
 			</div>
 		</section>
@@ -126,10 +129,10 @@
 			<div class="col-12 border rounded ">
 				<img src="img/captura-panini.PNG" 
 				class="img-fluid d-flex m-auto rounded" width="450px" height="auto" 
-				alt="captura de pantalla de la pagina web de Radio Xochimilco">
+				alt="Bigotes de panini" id="animacionBigotes">
 				<p class="text-center">Sitio web</p>
 				
-				<a href="http://bigotes.ajolotech.net/" 
+				<a href="https://bigotesdepanini.com/" 
 				class="mt-1 btn  d-flex m-auto justify-content-center">Visitar</a>
 				
 			</div>
@@ -140,22 +143,22 @@
 	<!-- seccion Equipo -->
 	<article class="container" id="equipo">
 		<div class="row pt-md-3">
-			<div class="col-12">
+			<div class="col-12" id="animacionTituloEquipo">
 				<h1 class="text-center">Equipo</h1>
 			</div>
 		</div>
 		<section class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4" id="animacionDonovan">
 				<img src="img/donovan.jpg" class="img-fluid rounded-circle d-flex m-auto" width="270px" height="auto" alt="foto de Donovan">
 				<h5 class="text-center">Donovan</h5>
 				<h6 class="text-center">Android y Web</h6>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4" id="animacionGuille">
 				<img src="img/guille.jpg" class="img-fluid rounded-circle d-flex m-auto" width="270px" height="auto" alt="foto de Guillermo">
 				<h5 class="text-center">Guillermo</h5>
 				<h6 class="text-center">Back End</h6>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4" id="animacionFrancisco">
 				<img src="img/yo.jpg" class="img-fluid rounded-circle d-flex m-auto" width="270px" height="auto" alt="mi foto">
 				<h5 class="text-center">Francisco</h5>
 				<h6 class="text-center">Web y Android</h6>
@@ -176,7 +179,7 @@
 		<div class="container d-flex justify-content-center pb-3">	
 			<div class="row w-50 ">
 				<div class="col-4">
-					<a href="https://www.facebook.com/ajolote.tecnologico">
+					<a href="https://www.facebook.com/AjoloTech-103733198461080">
 						<img  src="img/facebook.svg">
 						<h6 class="d-none d-md-block text-center">facebook</h6>
 					</a>
@@ -195,7 +198,54 @@
 				</div>
 			</div>
 		</div>
-	</aside>
+
+		<!-- FORMULARIO CONTACTO 
+		<div class="container">
+			<h4 class="text-center">Contactanos</h4>
+			<div class="row d-flex justify-content-center">
+				<form action="php/doc.php" method="POST">
+					<div class="form">
+						
+						<div class="row d-flex justify-content-center">
+							<label>nombre:</label><br>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<input type="text" name="nombre" required><br>
+						</div>
+						
+
+						<div class="row d-flex justify-content-center">
+							<label>email:</label><br>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<input type="email" name="email" required><br>
+						</div>
+
+						
+						<div class="row d-flex justify-content-center">
+							<label>asunto:</label><br>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<input type="text" name="asunto" required><br>
+						</div>
+
+						
+						<div class="row d-flex justify-content-center">
+							<label>mensaje:</label><br>
+						</div>
+						
+						<textarea name="mensaje" rows="3" required></textarea>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</div>-->
+
+	</aside><br> 
+	
+
 	<!-- SECCION PIE DE PÁGINA -->
 	<footer class="text-center text-white">
 	  <div class="container">
@@ -208,5 +258,21 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- ARCHIVO PERSONALIZADO JS DE ANIMACIONES ScrollReveal-->
+	<script src="js/animaciones.js"></script>
+
+	<!-- ANIMACION SCROLL -->
+	<script>
+		//Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+	</script>
 </body>
 </html>
